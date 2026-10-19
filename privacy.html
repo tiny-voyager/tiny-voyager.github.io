@@ -35,8 +35,8 @@
             device's advertising identifier.
           </li>
           <li>
-            The game sends anonymous play statistics and error reports so it can be improved. You can turn this off in
-            Settings → Anonymous statistics.
+            The game sends anonymous play statistics (PostHog) and crash reports (Sentry) so it can be improved. One
+            switch turns both off: Settings → Anonymous statistics.
           </li>
           <li>Nothing is sold.</li>
         </ul>
@@ -84,9 +84,9 @@
         Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
       </p>
 
-      <h2>Statistics and error reports: PostHog</h2>
+      <h2>Statistics: PostHog</h2>
       <p>
-        To see which levels are too hard, whether players come back and what crashes, the game sends anonymous events
+        To see which levels are too hard and whether players come back, the game sends anonymous events
         to PostHog, a product analytics service, on its servers in the European Union (Frankfurt, Germany). Each
         installation gets a random identifier created by the game; it is not linked to your name, your Google or Apple
         account or the advertising identifier. The events are:
@@ -97,10 +97,6 @@
           character bought with stars, a reward ad watched, a setting changed;
         </li>
         <li>the app being opened, sent to the background, installed or updated;</li>
-        <li>
-          error reports: the technical message and where in the code an error happened (crash reports, no personal
-          content);
-        </li>
         <li>the app version, the device model, the operating system and its version, the language and the time zone.</li>
       </ul>
       <p>
@@ -108,6 +104,18 @@
         <strong>Settings → Anonymous statistics</strong>: from then on nothing more is sent. The events are kept only as long as
         they are useful for improving the game, and for at most 24 months. PostHog's privacy policy:
         <a href="https://posthog.com/privacy">posthog.com/privacy</a>.
+      </p>
+
+      <h2>Crash reports: Sentry</h2>
+      <p>
+        When the game crashes, freezes or hits an error, a report goes to Sentry, an error monitoring service, on its
+        servers in the European Union (Frankfurt, Germany). A report contains the technical error message and where in
+        the code it happened, the last technical steps before it (for example which screen was open), the app version
+        and update, the device model, the operating system and its version, the language, and the free memory and
+        storage. It contains no name, e-mail, advertising identifier or screenshot, and the IP address is not stored.
+        Reports are kept for at most 90 days. The same switch turns them off:
+        <strong>Settings → Anonymous statistics</strong>. Sentry's privacy policy:
+        <a href="https://sentry.io/privacy/">sentry.io/privacy</a>.
       </p>
 
       <h2>Why (legal bases)</h2>
@@ -129,7 +137,7 @@
             <td>Your consent for personalised ads and, where required, for accessing the device (art. 6(1)(a)); legitimate interest for non-personalised ads and fraud prevention (art. 6(1)(f))</td>
           </tr>
           <tr>
-            <td>Statistics and error reports</td>
+            <td>Statistics and crash reports</td>
             <td>Find bugs, balance the levels</td>
             <td>Legitimate interest in a working, well-balanced game (art. 6(1)(f)); you can object by turning them off</td>
           </tr>
@@ -138,9 +146,9 @@
 
       <h2>Who receives data</h2>
       <p>
-        Only Google (ads) and PostHog (statistics), as described above. Google may process data outside the European
-        Economic Area, protected by the EU–US Data Privacy Framework and the European Commission's standard contractual
-        clauses. I do not sell or rent data to anyone.
+        Only Google (ads), PostHog (statistics) and Sentry (crash reports), as described above. Google and Sentry may
+        process data outside the European Economic Area, protected by the EU–US Data Privacy Framework and the European
+        Commission's standard contractual clauses. I do not sell or rent data to anyone.
       </p>
 
       <h2>Children</h2>

@@ -35,8 +35,8 @@
             identificatorul de publicitate al dispozitivului.
           </li>
           <li>
-            Jocul trimite statistici anonime de joc și rapoarte de erori, ca să poată fi îmbunătățit. Le poți opri din
-            Setări → Statistici anonime.
+            Jocul trimite statistici anonime de joc (PostHog) și rapoarte de erori (Sentry), ca să poată fi îmbunătățit.
+            Un singur buton le oprește pe amândouă: Setări → Statistici anonime.
           </li>
           <li>Nimic nu se vinde.</li>
         </ul>
@@ -85,9 +85,9 @@
         Politica de confidențialitate Google: <a href="https://policies.google.com/privacy?hl=ro">policies.google.com/privacy</a>.
       </p>
 
-      <h2>Statistici și rapoarte de erori: PostHog</h2>
+      <h2>Statistici: PostHog</h2>
       <p>
-        Ca să văd ce niveluri sunt prea grele, dacă jucătorii revin și ce se strică, jocul trimite evenimente anonime la
+        Ca să văd ce niveluri sunt prea grele și dacă jucătorii revin, jocul trimite evenimente anonime la
         PostHog, un serviciu de statistici pentru aplicații, pe serverele sale din Uniunea Europeană (Frankfurt,
         Germania). Fiecare instalare primește un identificator aleatoriu creat de joc; nu e legat de numele tău, de
         contul Google sau Apple ori de identificatorul de publicitate. Evenimentele sunt:
@@ -98,10 +98,6 @@
           câștigat, un boost sau un personaj cumpărat cu stele, o reclamă văzută pentru recompensă, o setare schimbată;
         </li>
         <li>deschiderea aplicației, trecerea ei în fundal, instalarea sau actualizarea;</li>
-        <li>
-          rapoarte de erori: mesajul tehnic și locul din cod unde a apărut o eroare (rapoarte de blocare, fără conținut
-          personal);
-        </li>
         <li>versiunea aplicației, modelul dispozitivului, sistemul de operare și versiunea lui, limba și fusul orar.</li>
       </ul>
       <p>
@@ -109,6 +105,18 @@
         <strong>Setări → Statistici anonime</strong>: de atunci nu se mai trimite nimic. Evenimentele se păstrează doar cât sunt
         utile pentru îmbunătățirea jocului și cel mult 24 de luni. Politica de confidențialitate PostHog:
         <a href="https://posthog.com/privacy">posthog.com/privacy</a>.
+      </p>
+
+      <h2>Rapoarte de erori: Sentry</h2>
+      <p>
+        Când jocul se blochează, îngheață sau dă de o eroare, un raport ajunge la Sentry, un serviciu de monitorizare a
+        erorilor, pe serverele sale din Uniunea Europeană (Frankfurt, Germania). Raportul conține mesajul tehnic al
+        erorii și locul din cod unde a apărut, ultimii pași tehnici dinaintea ei (de exemplu ce ecran era deschis),
+        versiunea aplicației și a actualizării, modelul dispozitivului, sistemul de operare și versiunea lui, limba,
+        memoria și spațiul liber. Nu conține nume, e-mail, identificatorul de publicitate sau capturi de ecran, iar
+        adresa IP nu se păstrează. Rapoartele se păstrează cel mult 90 de zile. Același buton le oprește:
+        <strong>Setări → Statistici anonime</strong>. Politica de confidențialitate Sentry:
+        <a href="https://sentry.io/privacy/">sentry.io/privacy</a>.
       </p>
 
       <h2>De ce (temeiuri legale)</h2>
@@ -139,8 +147,8 @@
 
       <h2>Cine primește date</h2>
       <p>
-        Doar Google (reclame) și PostHog (statistici), cum e descris mai sus. Google poate prelucra date în afara
-        Spațiului Economic European, cu protecția oferită de Cadrul UE–SUA privind protecția datelor și de clauzele
+        Doar Google (reclame), PostHog (statistici) și Sentry (rapoarte de erori), cum e descris mai sus. Google și
+        Sentry pot prelucra date în afara Spațiului Economic European, cu protecția oferită de Cadrul UE–SUA privind protecția datelor și de clauzele
         contractuale standard ale Comisiei Europene. Nu vând și nu închiriez date nimănui.
       </p>
 
