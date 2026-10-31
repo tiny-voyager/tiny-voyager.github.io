@@ -1,7 +1,5 @@
-# Tiny Voyager — website
+# Tiny Voyager — old website
 
-The game's public pages, served by GitHub Pages: home, support, privacy policy (English and Romanian) and `app-ads.txt` for AdMob.
+Since 2026-10-31 Tiny Voyager's pages live at https://aiplaz.github.io/tiny-voyager/ (repository `Aiplaz/aiplaz.github.io`, folder `tiny-voyager/`). Every page here only redirects to its new address, because Tiny Voyager 1.1.2 and older open https://tiny-voyager.github.io/privacy.html from Settings and the store pages may still link here.
 
-The privacy policy describes what the app actually does (no accounts, progress only on the phone, rewarded ads from Google AdMob, anonymous statistics and error reports from PostHog in the EU, turned off in Settings). When the app starts collecting anything new, update both `privacy.html` and `privacy-ro.html` and the date at the top before the release.
-
-`app-ads.txt` must stay at the root of the site, which is the developer website given in both stores.
+`app-ads.txt` stays at the root of this site for as long as any store lists https://tiny-voyager.github.io as the developer website.
