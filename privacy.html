@@ -23,7 +23,7 @@
       </header>
 
       <h1><span class="misprint" data-t="Privacy policy">Privacy policy</span></h1>
-      <p class="meta">Tiny Voyager (iOS and Android) · last updated 19 October 2026</p>
+      <p class="meta">Tiny Voyager (iOS and Android) · last updated 31 October 2026</p>
 
       <div class="card">
         <p><strong>In short:</strong></p>
@@ -35,7 +35,7 @@
             device's advertising identifier.
           </li>
           <li>
-            The game sends anonymous play statistics (PostHog) and crash reports (Sentry) so it can be improved. One
+            The game sends anonymous play statistics and crash reports (both to PostHog) so it can be improved. One
             switch turns both off: Settings → Anonymous statistics.
           </li>
           <li>Nothing is sold.</li>
@@ -106,16 +106,19 @@
         <a href="https://posthog.com/privacy">posthog.com/privacy</a>.
       </p>
 
-      <h2>Crash reports: Sentry</h2>
+      <h2>Crash reports: PostHog</h2>
       <p>
-        When the game crashes, freezes or hits an error, a report goes to Sentry, an error monitoring service, on its
+        When the game crashes or hits an error, a report goes to the same PostHog project as the statistics, on its
         servers in the European Union (Frankfurt, Germany). A report contains the technical error message and where in
-        the code it happened, the last technical steps before it (for example which screen was open), the app version
-        and update, the device model, the operating system and its version, the language, and the free memory and
-        storage. It contains no name, e-mail, advertising identifier or screenshot, and the IP address is not stored.
-        Reports are kept for at most 90 days. The same switch turns them off:
-        <strong>Settings → Anonymous statistics</strong>. Sentry's privacy policy:
-        <a href="https://sentry.io/privacy/">sentry.io/privacy</a>.
+        the code it happened, the app version, the device model, the operating system and its version and the language,
+        together with the same random installation identifier. It contains no name, e-mail, advertising identifier or
+        screenshot, and the IP address is not stored. Reports are kept like the statistics, for at most 24 months. The
+        same switch turns them off: <strong>Settings → Anonymous statistics</strong>.
+      </p>
+      <p>
+        Versions up to 1.1.1 sent crash reports to Sentry, an error monitoring service, on its servers in the European
+        Union (Frankfurt, Germany), with the same kind of content; those reports are kept for at most 90 days. Sentry's
+        privacy policy: <a href="https://sentry.io/privacy/">sentry.io/privacy</a>.
       </p>
 
       <h2>Why (legal bases)</h2>
@@ -146,7 +149,8 @@
 
       <h2>Who receives data</h2>
       <p>
-        Only Google (ads), PostHog (statistics) and Sentry (crash reports), as described above. Google and Sentry may
+        Only Google (ads) and PostHog (statistics and crash reports), plus Sentry for crash reports from versions up to
+        1.1.1, as described above. Google and Sentry may
         process data outside the European Economic Area, protected by the EU–US Data Privacy Framework and the European
         Commission's standard contractual clauses. I do not sell or rent data to anyone.
       </p>
